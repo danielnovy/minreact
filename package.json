@@ -1,0 +1,21 @@
+{
+  "name": "minreact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/browserify -s minreact -e ./SimpleComponent.jsx -o bundle.js"
+  },
+  "browserify": {
+    "transform": [
+        "reactify"
+    ]
+  },
+  "dependencies": {
+    "react":"0.13.x",
+    "browserify":"*",
+    "reactify":"*"
+  },
+  "author": "",
+  "license": "ISC"
+}
